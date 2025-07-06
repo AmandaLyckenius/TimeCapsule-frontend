@@ -1,3 +1,5 @@
+import './CapsuleTips.css';
+
 const CapsuleTips = () => {
     return (
         <div>

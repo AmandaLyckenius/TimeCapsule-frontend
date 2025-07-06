@@ -1,9 +1,11 @@
+import './Header.css';
+
 const Header = () => {
     return(
-        <div>
+        <header>
             <h1>Vision Capsule</h1>
             <p>Your time capsule </p>
-        </div>
+        </header>
     )
 }
 

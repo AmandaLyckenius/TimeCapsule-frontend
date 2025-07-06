@@ -1,9 +1,11 @@
+import './Footer.css';
+
 const Footer = () => {
     return(
-        <div>
+        <footer>
             <p>Vision Capsule</p>
 
-        </div>
+        </footer>
     )
 }
 

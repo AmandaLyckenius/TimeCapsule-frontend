@@ -1,20 +1,44 @@
+import './CapsuleForm.css';
+import { useState } from 'react';
+
 const CapsuleForm = () => {
+
+    const [email, setEmail] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
+    const [deliveryDate, setDeliveryDate] = useState<string>("");
+
     return(
         <form action="">
 
-            <label>
+            <label className='form-field'>
                 Email:
-                <input type="email" name="email" required />
+                <input 
+                type="email" 
+                name="email" 
+                value={email} 
+                onChange={(e) => setEmail(e.target.value)} 
+                required />
             </label>
 
-            <label>
+            <label className='form-field'>
                 Delivery date:
-                <input type="date" name="deliveryDate" required />
+                <input 
+                type="date" 
+                name="deliveryDate" 
+                value={deliveryDate} 
+                onChange={(e) => setDeliveryDate(e.target.value)} 
+                required />
             </label>
 
-            <label>
+            <label className='form-field'>
                 Message:
-                <textarea placeholder="Write your vision for your future here"></textarea>
+
+                <textarea 
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Write your vision for your future here">
+                </textarea>
+
             </label>
 
             <button type="submit">Send</button>
