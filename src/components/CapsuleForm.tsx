@@ -1,3 +1,4 @@
+import { sendCapsule } from '../api/capsuleApi';
 import './CapsuleForm.css';
 import { useState } from 'react';
 
@@ -6,6 +7,16 @@ const CapsuleForm = () => {
     const [email, setEmail] = useState<string>("");
     const [message, setMessage] = useState<string>("");
     const [deliveryDate, setDeliveryDate] = useState<string>("");
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        try {
+            const data = await sendCapsule({email, message, deliveryDate})
+        } catch (error){
+            console.error("Failed to send capsule", error)
+        }
+    }
 
     return(
         <form action="">
