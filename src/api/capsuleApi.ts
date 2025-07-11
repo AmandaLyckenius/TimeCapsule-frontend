@@ -7,7 +7,7 @@ export const sendCapsule = async (capsuleData: {
     deliveryDate: string;
 }) => {
 
-    const response = await fetch (`${BASE_URL}/api/capsules`, {
+    const response = await fetch (`${BASE_URL}/api/time-capsule`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -17,8 +17,16 @@ export const sendCapsule = async (capsuleData: {
     });
 
     if(!response.ok){
-        throw new Error ("Failed to send time capsule")
+        const errorText = await response.text();
+        throw new Error (`Failed to send time capsule: ${errorText}`)
     }
 
-    return response.json();
+    const contentType = response.headers.get("content-type");
+
+    if (contentType && contentType.includes("application/json")){
+        return await response.json();
+    } else {
+        return {message: await response.text() || "Time capsule sent!"}
+    }
+
 }

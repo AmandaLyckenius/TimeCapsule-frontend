@@ -13,13 +13,14 @@ const CapsuleForm = () => {
 
         try {
             const data = await sendCapsule({email, message, deliveryDate})
+            console.log("Successfully sent capsule")
         } catch (error){
             console.error("Failed to send capsule", error)
         }
     }
 
     return(
-        <form action="">
+        <form onSubmit={handleSubmit}>
 
             <label className='form-field'>
                 Email:
