@@ -19,7 +19,7 @@ const CapsuleTips = () => {
     return (
         <div>
             <button onClick={() => setShowTips(!showTips)}>
-            <CircleQuestionMark />
+            <CircleQuestionMark size={24} color="#333" />
 
             </button>
 

@@ -6,6 +6,7 @@ const MainContent  = () => {
     return (
         <main>
             <h2>Create You Time Capsule</h2>
+            <CapsuleTips/>
             <CapsuleForm/>
 
         </main>
