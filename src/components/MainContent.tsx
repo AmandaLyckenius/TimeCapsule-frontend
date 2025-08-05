@@ -1,4 +1,5 @@
 import CapsuleForm from "./CapsuleForm";
+import CapsuleTips from "./CapsuleTips";
 import './MainContent.css';
 
 const MainContent  = () => {

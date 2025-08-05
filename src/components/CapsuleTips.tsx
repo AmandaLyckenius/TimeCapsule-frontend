@@ -1,18 +1,38 @@
+import { useState } from 'react';
 import './CapsuleTips.css';
+import { CircleQuestionMark } from 'lucide-react';
 
 const CapsuleTips = () => {
+
+    const [showTips, setShowTips] = useState<boolean>(false);
+
+    const tips = [
+        "Where do you live?",
+        "How do you spend a typical day?",
+        "Have you traveled?",
+        "Have you met someone famous?",
+        "Have you learnt a new skill?",
+        "What kind of music do you listen to?"
+    ];
+
+
     return (
         <div>
-            <h2>Here are some questions to get you inspired</h2>
-            <ul>
-                <li>Where do you live?</li>
-                <li>How do you spend a typical day?</li>
-                <li>Have you traveled?</li>
-                <li>Have you met someone famous?</li>
-                <li>Have you learnt a new skill?</li>
-                <li>What kind of music do you listen to?</li>
-                <li>more examples here</li>
-            </ul>
+            <button onClick={() => setShowTips(!showTips)}>
+            <CircleQuestionMark />
+
+            </button>
+
+            {showTips && (
+                <div>
+                    <p>Here are some questions to get you started</p>
+                    <ul>
+                        {tips.map((tip, index) => (
+                            <li key={index}> {tip}</li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </div>
     )
 }
