@@ -1,0 +1,12 @@
+.help-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* så den inte hamnar bakom något */
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
