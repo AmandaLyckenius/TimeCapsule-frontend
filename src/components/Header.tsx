@@ -4,7 +4,7 @@ const Header = () => {
     return(
         <header>
             <h1>Vision Capsule</h1>
-            <p>Your time capsule </p>
+            <p>Vision your future </p>
         </header>
     )
 }
