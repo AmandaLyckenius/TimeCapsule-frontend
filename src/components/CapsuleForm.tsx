@@ -1,6 +1,7 @@
 import { sendCapsule } from '../api/capsuleApi';
 import './CapsuleForm.css';
 import { useState } from 'react';
+import CapsuleTips from './CapsuleTips';
 
 const CapsuleForm = () => {
 
@@ -21,7 +22,7 @@ const CapsuleForm = () => {
 
     return(
         <form onSubmit={handleSubmit}>
-
+            
             <label className='form-field'>
                 Email:
                 <input 
@@ -53,7 +54,15 @@ const CapsuleForm = () => {
 
             </label>
 
-            <button type="submit">Send</button>
+            <div className='button-box'>
+              <button type="submit">Send</button>
+            </div>
+
+            <div className='tips-button'>
+                <CapsuleTips/>
+            </div>
+
+            
 
 
         </form>

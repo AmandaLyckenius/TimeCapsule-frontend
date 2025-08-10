@@ -1,12 +1,21 @@
 .help-button {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background-color: white;
+  background-color: white;      /*Kolla upp varför färgen inte bli vit*/
   border: none;
   cursor: pointer;
-  z-index: 1000; /* så den inte hamnar bakom något */
+  z-index: 1000;
   padding: 0.5rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+}
+
+.help-button-container {
+    display: flex;
+    justify-content: end;
+}
+

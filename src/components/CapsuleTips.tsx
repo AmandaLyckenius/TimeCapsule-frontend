@@ -18,21 +18,30 @@ const CapsuleTips = () => {
 
     return (
         <div>
-            <button className='help-button' onClick={() => setShowTips(!showTips)}>
-            <CircleQuestionMark size={24} color="#333" />
+           
+           <div className='tips-container'>
+                {showTips && (
+                    <div className='tips-box'>
+                        <p>Here are some questions to get you started</p>
+                        <ul>
+                            {tips.map((tip, index) => (
+                                <li key={index}> {tip}</li>
+                            ))}
+                        </ul>   
+                    </div>
 
-            </button>
+                )}
+           </div>
 
-            {showTips && (
-                <div>
-                    <p>Here are some questions to get you started</p>
-                    <ul>
-                        {tips.map((tip, index) => (
-                            <li key={index}> {tip}</li>
-                        ))}
-                    </ul>
-                </div>
-            )}
+
+            <div className='help-button-container'>
+                <button className='help-button' onClick={() => setShowTips(!showTips)}>
+                    <CircleQuestionMark size={24} color="#333" />
+                </button>
+
+            </div>
+
+
         </div>
     )
 }

@@ -5,9 +5,11 @@ import './MainContent.css';
 const MainContent  = () => {
     return (
         <main>
-            <h2>Create You Time Capsule</h2>
-            <CapsuleTips/>
+
+            <h2>Vision Capsule</h2>
+        
             <CapsuleForm/>
+            
 
         </main>
     )

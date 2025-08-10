@@ -3,3 +3,40 @@
     flex-direction: column;
     margin-bottom: 1rem;
 }
+
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-box{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    height: 200px;
+}
+
+button {
+    border-radius: 8px;
+    border-color: #4C9ED9;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    
+}
+
+button:hover{
+    background-color: #4C9ED9;
+}
+
+.tips-button {
+    display: flex;
+    width: 100%;
+}
