@@ -1,5 +1,5 @@
 .help-button {
-  background-color: white;      /*Kolla upp varför färgen inte bli vit*/
+  background-color: white;
   border: none;
   cursor: pointer;
   z-index: 1000;
@@ -12,10 +12,16 @@
 .tips-container {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .help-button-container {
     display: flex;
     justify-content: end;
+}
+
+.tips-box p {
+    color: var(--text-900);
+    font-weight: 600;
 }
 

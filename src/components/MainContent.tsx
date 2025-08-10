@@ -6,7 +6,11 @@ const MainContent  = () => {
     return (
         <main>
 
-            <h2>Vision Capsule</h2>
+            <div className="intro-text">
+                <h1>VISION CAPSULE</h1>
+                <p>Send a message to your future self</p>
+            </div>
+            
         
             <CapsuleForm/>
             

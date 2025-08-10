@@ -6,6 +6,17 @@ main {
     min-height: 100vh;
     padding-top: 60px;
     gap: 20px;
-    background-color: #4C9ED9;
+    background-color: var(--accent);
     margin-bottom: 0px;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
 }

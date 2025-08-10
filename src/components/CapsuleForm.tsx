@@ -23,7 +23,7 @@ const CapsuleForm = () => {
     return(
         <form onSubmit={handleSubmit}>
             
-            <label className='form-field'>
+            <label>
                 Email:
                 <input 
                 type="email" 
@@ -33,7 +33,7 @@ const CapsuleForm = () => {
                 required />
             </label>
 
-            <label className='form-field'>
+            <label>
                 Delivery date:
                 <input 
                 type="date" 
@@ -43,7 +43,7 @@ const CapsuleForm = () => {
                 required />
             </label>
 
-            <label className='form-field'>
+            <label>
                 Message:
 
                 <textarea 
