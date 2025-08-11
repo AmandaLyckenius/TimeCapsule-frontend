@@ -55,7 +55,7 @@ const CapsuleForm = () => {
             </label>
 
             <div className='button-box'>
-              <button type="submit">Send</button>
+              <button className="send-button" type="submit">Send</button>
             </div>
            
             <CapsuleTips/>

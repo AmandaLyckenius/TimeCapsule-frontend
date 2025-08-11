@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './CapsuleTips.css';
-import { CircleQuestionMark } from 'lucide-react';
+import { CircleQuestionMark, Lightbulb } from 'lucide-react';
 
 const CapsuleTips = () => {
 
@@ -36,7 +36,7 @@ const CapsuleTips = () => {
 
             <div className='help-button-container'>
                 <button className='help-button' onClick={() => setShowTips(!showTips)}>
-                    <CircleQuestionMark size={24} color="#333" />
+                    <Lightbulb size={24} color="#333" />
                 </button>
 
             </div>

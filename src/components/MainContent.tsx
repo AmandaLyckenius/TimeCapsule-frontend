@@ -8,7 +8,7 @@ const MainContent  = () => {
 
             <div className="intro-text">
                 <h1>VISION CAPSULE</h1>
-                <p>Send a message to your future self</p>
+                <p className="tagline">Send a message to your future self</p>
             </div>
             
         
