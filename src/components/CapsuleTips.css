@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    color: var(--color-text-secondary);
 }
 
 .help-button-container {
@@ -28,6 +29,6 @@
 }
 
 .tips-box p {
-    color: var(--color-text-primary);
+    
     font-weight: 600;
 }
